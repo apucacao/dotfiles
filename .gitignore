@@ -1,0 +1,4 @@
+*.DS_Store
+*.netrwhist
+*.pyc
+sublime2/Backup

@@ -1,0 +1,13 @@
+[user]
+	name = Alexis Georges
+	email = alexis.georges@gmail.com
+[core]
+	ignorecase = false
+[color]
+  ui = auto
+[difftool]
+	prompt = false
+[github]
+	user = apucacao
+[push]
+	default = current
