@@ -1,0 +1,9 @@
+--sort-files
+--color
+--context=1
+--follow
+--group
+--type-add=ruby=.haml,.rake,.builder
+--type-set=markdown=.md,.markdown
+--type-set=less=.less
+--type-set=sass=.sass,.scss
