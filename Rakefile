@@ -1,6 +1,6 @@
 # credits: https://github.com/henrik/dotfiles/blob/master/Rakefile by @henrik
 
-IGNORE_FILES = %w(README.markdown Rakefile osx)
+IGNORE_FILES = %w(README.markdown Rakefile osx misc)
 
 def confirm (msg)
   print "> #{msg} (y/n)"
