@@ -5,6 +5,17 @@ Bundle 'gmarik/vundle'
 
 " Bundles
 Bundle "altercation/vim-colors-solarized"
+Bundle "tpope/vim-commentary"
+Bundle "tpope/vim-fugitive"
+Bundle "tpope/vim-surround"
+Bundle "msanders/snipmate.vim"
+Bundle "nathanaelkane/vim-indent-guides"
+Bundle "mileszs/ack.vim"
+Bundle "henrik/vim-open-url"
+Bundle "henrik/vim-reveal-in-finder"
+Bundle "pangloss/vim-javascript"
+Bundle "wincent/Command-T"
+Bundle "scrooloose/nerdtree"
 
 filetype plugin indent on
 syntax on
@@ -27,6 +38,9 @@ set colorcolumn=80
 
 let mapleader=","
 
+" Mappings
+map <silent> <leader>f :NERDTreeToggle<CR>
+
 if has('gui_running')
     set mouse=a
     set background=light
@@ -44,3 +58,6 @@ endif
 
 " Custom filetypes
 au BufNewFile,BufRead *.md set ft=markdown
+
+" Startup commands
+autocmd vimenter * NERDTree
