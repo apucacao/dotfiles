@@ -5,6 +5,7 @@ Bundle 'gmarik/vundle'
 
 " Bundles
 Bundle "altercation/vim-colors-solarized"
+Bundle "tpope/vim-repeat"
 Bundle "tpope/vim-commentary"
 Bundle "tpope/vim-fugitive"
 Bundle "tpope/vim-surround"
@@ -60,4 +61,4 @@ endif
 au BufNewFile,BufRead *.md set ft=markdown
 
 " Startup commands
-autocmd vimenter * NERDTree
+" autocmd vimenter * NERDTree
