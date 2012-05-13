@@ -37,11 +37,6 @@ set foldmethod=manual
 set vb
 set colorcolumn=80
 
-let mapleader=","
-
-" Mappings
-map <silent> <leader>f :NERDTreeToggle<CR>
-
 if has('gui_running')
     set mouse=a
     set background=light
@@ -60,5 +55,16 @@ endif
 " Custom filetypes
 au BufNewFile,BufRead *.md set ft=markdown
 
-" Startup commands
-" autocmd vimenter * NERDTree
+let mapleader=","
+
+" Open/Close NERTTree
+map <silent> <leader>f :NERDTreeToggle<CR>
+
+" Close last open tag
+imap <leader>/ </<C-X><C-O>
+
+" Save
+nmap <leader>w :w!<CR>
+
+" Toggle spelling
+map <leader>ss :setlocal spell!<CR>
