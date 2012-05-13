@@ -47,7 +47,7 @@ if has('gui_running')
     color solarized
     set guioptions+=mTrbLl
     set guioptions-=mTrbLl
-    set guifont=Menlo:h12
+    set guifont=Monaco:h12
 
     set cursorline
 
