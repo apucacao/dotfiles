@@ -5,6 +5,7 @@ Bundle 'gmarik/vundle'
 
 " Bundles
 Bundle "altercation/vim-colors-solarized"
+Bundle "tsaleh/vim-matchit"
 Bundle "tpope/vim-repeat"
 Bundle "tpope/vim-commentary"
 Bundle "tpope/vim-fugitive"
