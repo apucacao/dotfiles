@@ -5,6 +5,7 @@ Bundle 'gmarik/vundle'
 
 " Bundles
 Bundle "altercation/vim-colors-solarized"
+Bundle "jeetsukumaran/vim-buffergator"
 Bundle "tsaleh/vim-matchit"
 Bundle "tpope/vim-repeat"
 Bundle "tpope/vim-commentary"
@@ -18,7 +19,6 @@ Bundle "henrik/vim-reveal-in-finder"
 Bundle "pangloss/vim-javascript"
 Bundle "wincent/Command-T"
 Bundle "scrooloose/nerdtree"
-Bundle "jeetsukumaran/vim-buffergator"
 Bundle "godlygeek/tabular"
 
 filetype plugin indent on
@@ -103,6 +103,7 @@ nmap <leader>w :w!<CR>
 map <leader>ss :setlocal spell!<CR>
 
 " Toggle Buffergator panel
+let g:buffergator_suppress_keymaps=1
 map <leader>g :BuffergatorToggle<CR>
 
 " Yank to OS clipboard.
@@ -113,3 +114,7 @@ nmap <leader>a= :Tabularize /=<CR>
 vmap <leader>a= :Tabularize /=<CR>
 nmap <leader>a: :Tabularize /:\zs<CR>
 vmap <leader>a: :Tabularize /:\zs<CR>
+
+" Command-T
+nnoremap <silent> <leader>t :CommandT<CR>
+nnoremap <silent> <leader>b :CommandTBuffer<CR>
