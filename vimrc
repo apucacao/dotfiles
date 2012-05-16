@@ -20,6 +20,7 @@ Bundle "pangloss/vim-javascript"
 Bundle "wincent/Command-T"
 Bundle "scrooloose/nerdtree"
 Bundle "godlygeek/tabular"
+Bundle "groenewege/vim-less"
 
 filetype plugin indent on
 syntax on
