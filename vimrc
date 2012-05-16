@@ -29,6 +29,7 @@ set encoding=utf-8
 set background=dark
 set nocompatible
 set ff=unix
+set nowrap
 set number
 set ai
 set modeline
