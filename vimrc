@@ -56,8 +56,8 @@ if has('gui_running')
     set cursorline
 
     " Change font size
-    map <silent> <leader>+ :set guifont=Menlo:h14<CR>
-    map <silent> <leader>- :set guifont=Menlo:h12<CR>
+    map <silent> <leader>+ :set guifont=Menlo:h14<cr>
+    map <silent> <leader>- :set guifont=Menlo:h12<cr>
 endif
 
 " Custom filetypes
@@ -93,30 +93,34 @@ inoremap $r ""<esc>i
 inoremap $t <><esc>i
 
 " Open/Close NERTTree
-map <silent> <leader>f :NERDTreeToggle<CR>
+map <silent> <leader>f :NERDTreeToggle<cr>
 
 " Close last open tag
-imap <leader>/ </<C-X><C-O>
+imap <leader>/ </<c-x><c-o>
 
 " Save
-nmap <leader>w :w!<CR>
+nmap <leader>w :w!<cr>
 
 " Toggle spelling
-map <leader>ss :setlocal spell!<CR>
+map <leader>ss :setlocal spell!<cr>
 
 " Toggle Buffergator panel
 let g:buffergator_suppress_keymaps=1
-map <leader>g :BuffergatorToggle<CR>
+map <leader>g :BuffergatorToggle<cr>
 
 " Yank to OS clipboard.
 noremap <leader>y "*y
 
 " Tabularize
-nmap <leader>a= :Tabularize /=<CR>
-vmap <leader>a= :Tabularize /=<CR>
-nmap <leader>a: :Tabularize /:\zs<CR>
-vmap <leader>a: :Tabularize /:\zs<CR>
+nmap <leader>a= :Tabularize /=<cr>
+vmap <leader>a= :Tabularize /=<cr>
+nmap <leader>a: :Tabularize /:\zs<cr>
+vmap <leader>a: :Tabularize /:\zs<cr>
 
 " Command-T
-nnoremap <silent> <leader>t :CommandT<CR>
-nnoremap <silent> <leader>b :CommandTBuffer<CR>
+nnoremap <silent> <leader>t :CommandT<cr>
+nnoremap <silent> <leader>b :CommandTBuffer<cr>
+
+" Markdown preview with Marked.app
+" Credits: http://captainbollocks.tumblr.com/post/9858989188/linking-macvim-and-marked-app
+:nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
