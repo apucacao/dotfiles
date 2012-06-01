@@ -21,6 +21,7 @@ Bundle "wincent/Command-T"
 Bundle "scrooloose/nerdtree"
 Bundle "godlygeek/tabular"
 Bundle "groenewege/vim-less"
+Bundle "ervandew/supertab"
 
 filetype plugin indent on
 syntax on
