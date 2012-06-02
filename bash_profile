@@ -28,3 +28,5 @@ export LSCOLORS=exfxcxdxbxegedabagacad
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
+
+alias mou="open -a Mou.app"
