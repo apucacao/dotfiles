@@ -14,7 +14,7 @@ Bundle "tpope/vim-surround"
 Bundle "msanders/snipmate.vim"
 Bundle "nathanaelkane/vim-indent-guides"
 Bundle "mileszs/ack.vim"
-Bundle "henrik/vim-open-url"
+" Bundle "henrik/vim-open-url"
 Bundle "henrik/vim-reveal-in-finder"
 Bundle "pangloss/vim-javascript"
 Bundle "wincent/Command-T"
@@ -46,15 +46,14 @@ set colorcolumn=80
 
 set scrolloff=3 " minimum number of lines above/below the caret
 
+color wombat256
+set guioptions+=mTrbLl
+set guioptions-=mTrbLl
+set guifont=Menlo:h12
+set cursorline
+
 if has('gui_running')
     set mouse=a
-    set background=light
-    color solarized
-    set guioptions+=mTrbLl
-    set guioptions-=mTrbLl
-    set guifont=Menlo:h12
-
-    set cursorline
 
     " Change font size
     map <silent> <leader>+ :set guifont=Menlo:h14<cr>
