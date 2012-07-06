@@ -7,6 +7,9 @@ export NODE_PATH="/usr/local/lib/node"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+# svn
+SVN_EDITOR="subl"
+
 # python
 export WORKON_HOME="$HOME/.virtualenvs"
 export VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python2.7"
