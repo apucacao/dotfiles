@@ -8,7 +8,7 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 # svn
-export SVN_EDITOR="subl"
+export SVN_EDITOR="vim"
 
 # python
 export WORKON_HOME="$HOME/.virtualenvs"
