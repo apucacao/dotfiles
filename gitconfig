@@ -11,3 +11,7 @@
 	user = apucacao
 [push]
 	default = current
+[alias]
+  s = status
+  c = commit
+  cm = commit -m
