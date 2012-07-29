@@ -15,5 +15,5 @@
   s = status
   c = commit
   cm = commit -m
-  l = log
+  l = log -n 5
   sl = shortlog -n
