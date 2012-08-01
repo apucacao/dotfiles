@@ -12,8 +12,9 @@
 [push]
 	default = current
 [alias]
+  a = add .
   s = status
   c = commit
   cm = commit -m
-  l = log -n 5
+  l = log
   sl = shortlog -n
