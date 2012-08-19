@@ -1,7 +1,7 @@
 export PATH="/usr/local/texlive/2011/bin/x86_64-darwin:/usr/local/share/python:/usr/local/bin:$PATH"
 
 #node
-export NODE_PATH="/usr/local/lib/node"
+export NODE_PATH="/usr/local/lib/node_modules"
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
