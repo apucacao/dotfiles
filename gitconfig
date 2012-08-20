@@ -16,5 +16,7 @@
   s = status
   c = commit
   cm = commit -m
+  co = checkout
+  cob = checkout -b
   l = log
   sl = shortlog -n
