@@ -37,3 +37,8 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
 fi
 
 alias mou="open -a Mou.app"
+
+# secrets
+
+export GOOGLE_CLIENT_ID="<replace google-client-id>"
+export GOOGLE_CLIENT_SECRET="<replace google-client-secret>"
