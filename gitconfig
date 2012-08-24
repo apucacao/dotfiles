@@ -6,7 +6,6 @@
 [color]
   ui = auto
 [difftool]
-	prompt = false
 [github]
 	user = apucacao
 [push]
@@ -21,3 +20,11 @@
   cob = checkout -b
   l = log
   sl = shortlog -n
+[difftool "Kaleidoscope"]
+[diff]
+[difftool "Kaleidoscope"]
+	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[diff]
+	tool = Kaleidoscope
