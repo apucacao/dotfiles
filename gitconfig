@@ -3,6 +3,7 @@
 	email = alexis.georges@gmail.com
 [core]
 	ignorecase = false
+  editor = vim
 [color]
   ui = auto
 [difftool]
