@@ -1,0 +1,13 @@
+fontName = "Menlo"
+fontSize = 12
+
+TM_GIT = "/usr/local/bin/git"
+
+[ source ]
+softWrap            = false
+wrapColumn          = 80
+softTabs            = true
+tabSize             = 2
+
+[ *.{icns,ico,jpg,jpeg,m4v,nib,pdf,png,psd,pyc,rtf,tif,tiff,xib} ]
+binary = true
