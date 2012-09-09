@@ -1,6 +1,1 @@
-[submodule "misc/osx-lion-terminal.app-colors-solarized"]
-	path = misc/osx-lion-terminal.app-colors-solarized
-	url = https://github.com/tomislav/osx-lion-terminal.app-colors-solarized.git
-[submodule "vim/bundle/vundle"]
-	path = vim/bundle/vundle
-	url = https://github.com/gmarik/vundle.git
+
