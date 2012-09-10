@@ -4,19 +4,20 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Bundles
-Bundle "altercation/vim-colors-solarized"
-Bundle "jeetsukumaran/vim-buffergator"
-Bundle "tsaleh/vim-matchit"
-Bundle "tpope/vim-repeat"
-Bundle "tpope/vim-commentary"
-Bundle "tpope/vim-fugitive"
-Bundle "tpope/vim-surround"
-Bundle "nathanaelkane/vim-indent-guides"
-Bundle "mileszs/ack.vim"
-Bundle "wincent/Command-T"
-Bundle "scrooloose/nerdtree"
-Bundle "godlygeek/tabular"
-Bundle "ervandew/supertab"
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'jeetsukumaran/vim-buffergator'
+Bundle 'tsaleh/vim-matchit'
+Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-commentary'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-surround'
+Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'mileszs/ack.vim'
+Bundle 'wincent/Command-T'
+Bundle 'scrooloose/nerdtree'
+Bundle 'godlygeek/tabular'
+Bundle 'ervandew/supertab'
+Bundle 'flazz/vim-colorschemes'
 
 filetype plugin indent on
 syntax on
@@ -59,7 +60,7 @@ endif
 au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Guardfile,config.ru}  set ft=ruby
 au BufNewFile,BufRead *.md set ft=markdown
 
-let mapleader=","
+let mapleader=','
 
 " Tab/shift-tab to indent/outdent in visual mode.
 vnoremap <Tab> >gv
