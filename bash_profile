@@ -27,8 +27,8 @@ else
   echo "WARNING: Can't find virtualenvwrapper.sh"
 fi
 
-export PS1="\[\e[0;33m\]λ\[\e[0m\] "
-# export PS1="\[\e[0;33m\]∞\[\e[0m\] "
+# export PS1="\[\e[0;33m\]λ\[\e[0m\] "
+export PS1="\[\e[0;33m\]∞\[\e[0m\] "
 export CLICOLOR=1
 export LSCOLORS=exfxcxdxbxegedabagacad
 
