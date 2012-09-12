@@ -49,7 +49,7 @@ set t_ti= t_te=
 
 set scrolloff=3 " minimum number of lines above/below the caret
 
-color wombat256
+color grb256
 set guioptions+=mTrbLl
 set guioptions-=mTrbLl
 set guifont=Menlo:h12
@@ -136,3 +136,5 @@ map <left> <nop>
 map <right> <nop>
 map <up> <nop>
 map <down> <nop>
+
+map <leader>. :t.<cr>
