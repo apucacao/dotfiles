@@ -32,12 +32,20 @@ set modeline
 set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 set backspace=indent,eol,start
 set showmatch
+set incsearch
+set hlsearch
 set history=1000
 set backupdir=/tmp
 set directory=/tmp
 set foldmethod=manual
 set vb
 set colorcolumn=80
+" make searches case-sensitive only if they contain upper-case characters
+set ignorecase smartcase
+
+" Prevent Vim from clobbering the scrollback buffer. See
+" http://www.shallowsky.com/linux/noaltscreen.html
+set t_ti= t_te=
 
 set scrolloff=3 " minimum number of lines above/below the caret
 
@@ -119,3 +127,12 @@ nnoremap <silent> <leader>b :CommandTBuffer<cr>
 " Markdown preview with Marked.app
 " Credits: http://captainbollocks.tumblr.com/post/9858989188/linking-macvim-and-marked-app
 :nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
+
+" Clear the search buffer
+nnoremap <cr> :nohlsearch<cr>
+
+" Disable arrow keys
+map <left> <nop>
+map <right> <nop>
+map <up> <nop>
+map <down> <nop>
