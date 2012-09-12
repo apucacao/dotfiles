@@ -39,7 +39,7 @@ set backupdir=/tmp
 set directory=/tmp
 set foldmethod=manual
 set vb
-set colorcolumn=80
+" set colorcolumn=80
 " make searches case-sensitive only if they contain upper-case characters
 set ignorecase smartcase
 
