@@ -6,6 +6,7 @@ export PATH="$HOME/bin:$PATH"
 
 #node
 export NODE_PATH="/usr/local/lib/node_modules"
+export NPM_CONFIG_PREFIX="/usr/local"
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
