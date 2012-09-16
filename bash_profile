@@ -29,7 +29,7 @@ else
 fi
 
 # export PS1="\[\e[0;33m\]λ\[\e[0m\] "
-export PS1="\[\e[0;33m\]∞\[\e[0m\] "
+export PS1="[\[\e[1;30m\]\w\[\e[0m\]] \[\e[0;33m\]∞\[\e[0m\] "
 export CLICOLOR=1
 export LSCOLORS=exfxcxdxbxegedabagacad
 
