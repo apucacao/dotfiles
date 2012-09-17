@@ -2,6 +2,7 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/share/python:$PATH"
 export PATH="/usr/local/texlive/2011/bin/x86_64-darwin:$PATH"
 export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
+export PATH="/opt/maven2/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 
 #node
