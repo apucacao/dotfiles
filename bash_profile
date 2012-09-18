@@ -1,3 +1,4 @@
+
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/share/python:$PATH"
 export PATH="/usr/local/texlive/2011/bin/x86_64-darwin:$PATH"
@@ -53,7 +54,18 @@ function gitify {
   fi
 }
 
-export PS1="[\[\e[1;30m\]\w\[\e[0m\]] (\[\e[1;35m\]$(gitify)\[\e[0m\]) \[\e[0;33m\]∞\[\e[0m\] "
+function make-prompt {
+  local RESET="\[\e[0m\]"
+  local GRAY="\[\e[1;30m\]"
+  local PURPLE="\[\e[1;35m\]"
+  local YELLOW="\[\e[0;33m\]"
+
+  PS1="${GRAY}\w${RESET}(${PURPLE}$(gitify)${RESET}) ${YELLOW}∞${RESET} "
+}
+
+PROMPT_COMMAND=make-prompt
+make-prompt
+
 export CLICOLOR=1
 export LSCOLORS=exfxcxdxbxegedabagacad
 
