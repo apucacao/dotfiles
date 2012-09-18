@@ -138,3 +138,9 @@ map <up> <nop>
 map <down> <nop>
 
 map <leader>. :t.<cr>
+
+" Use leader for moving between panes
+map <leader>h <c-w>h
+map <leader>j <c-w>j
+map <leader>k <c-w>k
+map <leader>l <c-w>l
