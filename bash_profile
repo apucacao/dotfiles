@@ -29,8 +29,31 @@ else
   echo "WARNING: Can't find virtualenvwrapper.sh"
 fi
 
-# export PS1="\[\e[0;33m\]λ\[\e[0m\] "
-export PS1="[\[\e[1;30m\]\w\[\e[0m\]] \[\e[0;33m\]∞\[\e[0m\] "
+# show git info in prompt
+
+function git-branch-name {
+  echo $(git symbolic-ref HEAD 2>/dev/null | awk -F/ {'print $NF'})
+}
+
+function git-dirty {
+  st=$(git status 2>/dev/null | tail -n 1)
+  if [[ $st != "nothing to commit (working directory clean)" ]]
+  then
+    echo "*"
+  fi
+}
+
+function gitify {
+  status=$(git status 2>/dev/null | tail -n 1)
+  if [[ $status == "" ]]
+  then
+    echo ""
+  else
+    echo $(git-branch-name)$(git-dirty)
+  fi
+}
+
+export PS1="[\[\e[1;30m\]\w\[\e[0m\]] (\[\e[1;35m\]$(gitify)\[\e[0m\]) \[\e[0;33m\]∞\[\e[0m\] "
 export CLICOLOR=1
 export LSCOLORS=exfxcxdxbxegedabagacad
 
