@@ -1,4 +1,3 @@
-
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/share/python:$PATH"
 export PATH="/usr/local/texlive/2011/bin/x86_64-darwin:$PATH"
@@ -50,7 +49,7 @@ function gitify {
   then
     echo ""
   else
-    echo $(git-branch-name)$(git-dirty)
+    echo "(${PURPLE}$(git-branch-name)$(git-dirty)${RESET})"
   fi
 }
 
@@ -60,7 +59,7 @@ function make-prompt {
   local PURPLE="\[\e[1;35m\]"
   local YELLOW="\[\e[0;33m\]"
 
-  PS1="${GRAY}\w${RESET}(${PURPLE}$(gitify)${RESET}) ${YELLOW}∞${RESET} "
+  PS1="${GRAY}\w${RESET}$(gitify) ${YELLOW}∞${RESET} "
 }
 
 PROMPT_COMMAND=make-prompt
