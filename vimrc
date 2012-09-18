@@ -16,6 +16,7 @@ Bundle 'wincent/Command-T'
 Bundle 'scrooloose/nerdtree'
 Bundle 'godlygeek/tabular'
 Bundle 'ervandew/supertab'
+Bundle 'jergason/scala.vim'
 Bundle 'flazz/vim-colorschemes'
 
 filetype plugin indent on
