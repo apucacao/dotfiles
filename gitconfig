@@ -20,6 +20,7 @@
   co = checkout
   cob = checkout -b
   l = log
+  ll = log -n 1
   sl = shortlog -n
   dt = difftool
 [difftool "Kaleidoscope"]
