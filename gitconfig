@@ -7,8 +7,6 @@
 [color]
   ui = auto
 [difftool]
-[github]
-	user = apucacao
 [push]
 	default = current
 [alias]
