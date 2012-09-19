@@ -1,6 +1,5 @@
 [user]
 	name = Alexis Georges
-	email = alexis.georges@gmail.com
 [core]
 	ignorecase = false
   editor = vim
