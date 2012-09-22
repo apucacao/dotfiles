@@ -76,6 +76,7 @@ fi
 
 # Java
 export JAVA_OPTS="-Xmx1024M -XX:MaxPermSize=256M"
+export MAVEN_OPTS="-Xmx1024m"
 
 # secrets
 
