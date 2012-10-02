@@ -72,7 +72,7 @@ if has('gui_running')
 endif
 
 " Custom filetypes
-au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Guardfile,config.ru}  set ft=ruby
+au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Guardfile,*.ru}  set ft=ruby
 au BufNewFile,BufRead *.md set ft=markdown
 
 let mapleader=','
