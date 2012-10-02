@@ -44,6 +44,13 @@ set vb
 " make searches case-sensitive only if they contain upper-case characters
 set ignorecase smartcase
 
+set wildmenu
+set wildmode=list:longest,full
+
+" status line
+set laststatus=2
+set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
+
 " Prevent Vim from clobbering the scrollback buffer. See
 " http://www.shallowsky.com/linux/noaltscreen.html
 set t_ti= t_te=
