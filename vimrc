@@ -139,6 +139,9 @@ nnoremap <silent> <leader>b :CommandTBuffer<cr>
 " Clear the search buffer
 nnoremap <cr> :nohlsearch<cr>
 
+" Exit insert mode
+:imap jj <Esc>
+
 " Disable arrow keys
 map <left> <nop>
 map <right> <nop>
