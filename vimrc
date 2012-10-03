@@ -55,7 +55,7 @@ set statusline=%<%f\ (%{&ft})\ %-4(%m%)%=%-19(%3l,%02c%03V%)
 " http://www.shallowsky.com/linux/noaltscreen.html
 set t_ti= t_te=
 
-set scrolloff=3 " minimum number of lines above/below the caret
+set scrolloff=9999 " minimum number of lines above/below the caret
 
 color grb256
 set guioptions+=mTrbLl
