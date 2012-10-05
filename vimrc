@@ -132,6 +132,8 @@ vmap <leader>a: :Tabularize /:\zs<cr>
 nnoremap <silent> <leader>t :CommandT<cr>
 nnoremap <silent> <leader>b :CommandTBuffer<cr>
 
+set wildignore+=*.pyc,*.o,*.obj,.git
+
 " Markdown preview with Marked.app
 " Credits: http://captainbollocks.tumblr.com/post/9858989188/linking-macvim-and-marked-app
 :nnoremap <leader>m :silent !open -a Marked.app '%:p'<cr>
