@@ -29,7 +29,7 @@ else
   echo "WARNING: Can't find virtualenvwrapper.sh"
 fi
 
-alias ll=ls -l a
+alias ll=ls -l -a
 
 # show git info in prompt
 
