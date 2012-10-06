@@ -29,6 +29,8 @@ else
   echo "WARNING: Can't find virtualenvwrapper.sh"
 fi
 
+alias ll=ls -l
+
 # show git info in prompt
 
 function git-branch-name {
