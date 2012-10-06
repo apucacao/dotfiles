@@ -77,6 +77,7 @@ endif
 " Custom filetypes
 au BufRead,BufNewFile {Gemfile,Rakefile,Vagrantfile,Guardfile,*.ru}  set ft=ruby
 au BufNewFile,BufRead *.md set ft=markdown
+au BufNewFile,BufRead *.json set ft=javascript
 
 let mapleader=','
 
