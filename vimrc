@@ -62,6 +62,8 @@ set scrolloff=9999 " minimum number of lines above/below the caret
 color Tomorrow-Night
 set cursorline
 
+set guifont=Monaco:h12
+
 if has('gui_running')
   set mouse=a
   set guioptions+=mTrbLl
