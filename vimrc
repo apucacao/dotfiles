@@ -60,6 +60,7 @@ set t_ti= t_te=
 set scrolloff=9999 " minimum number of lines above/below the caret
 
 color grb256
+set t_Co=256
 set guioptions+=mTrbLl
 set guioptions-=mTrbLl
 set guifont=Menlo:h12
