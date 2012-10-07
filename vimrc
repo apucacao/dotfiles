@@ -44,7 +44,6 @@ set vb
 " make searches case-sensitive only if they contain upper-case characters
 set ignorecase smartcase
 
-set list
 set listchars=tab:▸\ ,eol:¬
 
 set wildmenu
@@ -146,7 +145,7 @@ set wildignore+=*.pyc,*.o,*.obj,.git
 nnoremap <cr> :nohlsearch<cr>
 
 " Exit insert mode
-:imap jj <Esc>
+:imap <leader><leader> <Esc>
 
 " Disable arrow keys
 map <left> <nop>
