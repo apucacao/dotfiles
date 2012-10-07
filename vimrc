@@ -59,7 +59,7 @@ set t_ti= t_te=
 
 set scrolloff=9999 " minimum number of lines above/below the caret
 
-color lucius
+color Tomorrow-Night
 set cursorline
 
 if has('gui_running')
