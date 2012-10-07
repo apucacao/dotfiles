@@ -60,18 +60,14 @@ set t_ti= t_te=
 set scrolloff=9999 " minimum number of lines above/below the caret
 
 color grb256
-set t_Co=256
-set guioptions+=mTrbLl
-set guioptions-=mTrbLl
-set guifont=Menlo:h12
 set cursorline
 
 if has('gui_running')
-    set mouse=a
-
-    " Change font size
-    map <silent> <leader>+ :set guifont=Menlo:h14<cr>
-    map <silent> <leader>- :set guifont=Menlo:h12<cr>
+  set mouse=a
+  set guioptions+=mTrbLl
+  set guioptions-=mTrbLl
+else
+  set t_Co=256
 endif
 
 " Custom filetypes
