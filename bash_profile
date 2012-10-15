@@ -82,8 +82,3 @@ fi
 # Java
 export JAVA_OPTS="-Xmx1024M -XX:MaxPermSize=256M"
 export MAVEN_OPTS="-Xmx1024m"
-
-# secrets
-
-export GOOGLE_CLIENT_ID="<replace google-client-id>"
-export GOOGLE_CLIENT_SECRET="<replace google-client-secret>"
