@@ -18,6 +18,7 @@ Bundle 'godlygeek/tabular'
 Bundle 'ervandew/supertab'
 Bundle 'jergason/scala.vim'
 Bundle 'flazz/vim-colorschemes'
+Bundle 'scrooloose/syntastic'
 
 filetype plugin indent on
 syntax on
