@@ -33,6 +33,7 @@ else
 fi
 
 alias ll="ls -l -a -t -h"
+alias subl='open -a "Sublime Text 2"'
 
 # show git info in prompt
 

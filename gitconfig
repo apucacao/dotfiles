@@ -5,7 +5,6 @@
   editor = vim
 [color]
   ui = auto
-[difftool]
 [push]
 	default = current
 [alias]
@@ -21,9 +20,9 @@
   sl = shortlog -n
   dt = difftool
 [difftool "Kaleidoscope"]
-[diff]
-[difftool "Kaleidoscope"]
 	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 [difftool]
 	prompt = false
 [diff]
