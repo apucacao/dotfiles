@@ -79,7 +79,3 @@ export HISTTIMEFORMAT="%F %T "
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
-
-# Java
-export JAVA_OPTS="-Xmx1024M -XX:MaxPermSize=256M"
-export MAVEN_OPTS="-Xmx1024m"
