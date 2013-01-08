@@ -80,3 +80,5 @@ export HISTTIMEFORMAT="%F %T "
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
+
+export MAVEN_OPTS="-Xmx2048m"

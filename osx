@@ -77,3 +77,6 @@ defaults write com.apple.screencapture location ~/Dropbox/Screenshots/
 defaults write com.apple.screencapture disable-shadow -bool false
 
 defaults write com.apple.iTunes NSUserKeyEquivalents '{"★"="@1";"★★"="@2";"★★★"="@3";"★★★★"="@4";"★★★★★"="@5";}'
+
+# Change standby mode from 1 hour to 24 hours
+sudo pmset -a standbydelay 86400
