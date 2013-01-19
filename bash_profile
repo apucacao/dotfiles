@@ -82,3 +82,5 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
 fi
 
 export MAVEN_OPTS="-Xmx2048m"
+
+function serve { python -m SimpleHTTPServer "$@" ;}
