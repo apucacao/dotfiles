@@ -60,13 +60,23 @@ function gitify {
   fi
 }
 
+function virtualenvify {
+  if [[ $VIRTUAL_ENV == "" ]]
+  then
+    echo ""
+  else
+    echo "(${GREEN}${VIRTUAL_ENV##*/}${RESET})"
+  fi
+}
+
 function make-prompt {
   local RESET="\[\e[0m\]"
   local GRAY="\[\e[1;30m\]"
   local PURPLE="\[\e[1;35m\]"
   local YELLOW="\[\e[0;33m\]"
+  local GREEN="\[\e[0;32m\]"
 
-  PS1="${GRAY}\w${RESET}$(gitify) ${YELLOW}∞${RESET} "
+  PS1="${GRAY}\w${RESET}$(virtualenvify)$(gitify)${YELLOW}∞${RESET} "
 }
 
 PROMPT_COMMAND=make-prompt
