@@ -76,7 +76,7 @@ function make-prompt {
   local YELLOW="\[\e[0;33m\]"
   local GREEN="\[\e[0;32m\]"
 
-  PS1="${GRAY}\w${RESET}$(virtualenvify)$(gitify)${YELLOW}∞${RESET} "
+  PS1="${GRAY}\w${RESET}$(virtualenvify)$(gitify)${YELLOW} ∞${RESET} "
 }
 
 PROMPT_COMMAND=make-prompt
