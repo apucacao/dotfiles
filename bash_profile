@@ -71,8 +71,8 @@ function virtualenvify {
 
 function make-prompt {
   local RESET="\[\e[0m\]"
-  local GRAY="\[\e[1;30m\]"
-  local PURPLE="\[\e[1;35m\]"
+  local GRAY="\[\e[0;30m\]"
+  local PURPLE="\[\e[0;35m\]"
   local YELLOW="\[\e[0;33m\]"
   local GREEN="\[\e[0;32m\]"
 
@@ -94,3 +94,6 @@ fi
 export MAVEN_OPTS="-Xmx2048m"
 
 function serve { python -m SimpleHTTPServer "$@" ;}
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
