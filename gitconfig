@@ -9,7 +9,7 @@
 [push]
 	default = current
 [alias]
-  a = add .
+  a = add
   s = status
   b = branch
   c = commit
