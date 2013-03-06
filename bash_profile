@@ -97,3 +97,7 @@ function serve { python -m SimpleHTTPServer "$@" ;}
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# Java
+export JAVA_OPTS="-Xmx1024M -XX:MaxPermSize=256M"
+export MAVEN_OPTS="-Xmx1024m"
