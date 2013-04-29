@@ -35,6 +35,7 @@ fi
 
 alias ll="ls -l -a -t -h"
 alias st='open -a "Sublime Text 2" .'
+alias md='open -a "Marked"'
 
 # show git info in prompt
 
@@ -90,6 +91,8 @@ export HISTTIMEFORMAT="%F %T "
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
+
+eval "$(grunt --completion=bash)"
 
 export MAVEN_OPTS="-Xmx2048m"
 
