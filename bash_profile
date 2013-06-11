@@ -4,6 +4,7 @@ export PATH="/usr/local/share/python:$PATH"
 export PATH="/usr/local/texlive/2011/bin/x86_64-darwin:$PATH"
 export PATH="/opt/maven2/bin:$PATH"
 export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
+export PATH="$HOME/Downloads/repos/atlasian/atlassian-scripts/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 
 #node
@@ -102,5 +103,10 @@ function serve { python -m SimpleHTTPServer "$@" ;}
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # Java
-export JAVA_OPTS="-Xmx4096M -XX:MaxPermSize=1024M"
+export JAVA_OPTS="-Xmx4096M -XX:MaxPermSize=1024M -XX:MaxPermGen=1024M"
 export MAVEN_OPTS="-Xmx1024m"
+
+# Atlassian
+
+export ATLASSIAN_SCRIPTS="$HOME/Downloads/repos/atlassian/atlassian-scripts"
+source "$ATLASSIAN_SCRIPTS/sourceme.sh"
