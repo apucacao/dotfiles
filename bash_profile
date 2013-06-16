@@ -63,11 +63,14 @@ function gitify {
 }
 
 function virtualenvify {
-  if [[ $VIRTUAL_ENV == "" ]]
+  if [[ -n $VIRTUAL_ENV ]]
   then
-    echo ""
-  else
     echo "(${GREEN}${VIRTUAL_ENV##*/}${RESET})"
+  elif [[ -n $HSENV ]]
+  then
+    echo "(${GREEN}${HSENV##*/}${RESET})"
+  else
+    echo ""
   fi
 }
 
@@ -103,7 +106,7 @@ function serve { python -m SimpleHTTPServer "$@" ;}
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # Java
-export JAVA_OPTS="-Xmx4096M -XX:MaxPermSize=1024M -XX:MaxPermGen=1024M"
+export JAVA_OPTS="-Xmx4096M -XX:MaxPermSize=1024M"
 export MAVEN_OPTS="-Xmx1024m"
 
 # Atlassian
