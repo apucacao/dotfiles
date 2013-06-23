@@ -1,7 +1,7 @@
 # Taken from https://github.com/mathiasbynens/dotfiles.git
 
 # Enable the 2D Dock
-defaults write com.apple.dock no-glass -bool true
+# defaults write com.apple.dock no-glass -bool true
 
 # Disable menu bar transparency
 defaults write -g AppleEnableMenuBarTransparency -bool false

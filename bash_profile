@@ -26,7 +26,7 @@ export PIP_VIRTUALENV_BASE="$WORKON_HOME"
 export PIP_RESPECT_VIRTUALENV="true"
 
 # haskell
-export PATH="$HOME/.cabal/bin:$PATH"
+# export PATH="$HOME/.cabal/bin:$PATH"
 
 if [[ -r /usr/local/share/python/virtualenvwrapper.sh ]]; then
   source /usr/local/share/python/virtualenvwrapper.sh
