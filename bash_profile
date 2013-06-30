@@ -5,7 +5,6 @@ export PATH="/usr/local/share/npm/bin:$PATH"
 export PATH="/opt/maven2/bin:$PATH"
 export PATH="/Users/ageorges/.cabal/bin:$PATH"
 export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
-export PATH="$HOME/Downloads/repos/atlasian/atlassian-scripts/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 
 #node
@@ -113,5 +112,5 @@ export MAVEN_OPTS="-Xmx1024m"
 
 # Atlassian
 
-export ATLASSIAN_SCRIPTS="$HOME/Downloads/repos/atlassian/atlassian-scripts"
+export ATLASSIAN_SCRIPTS="$HOME/coding/clones/atlassian-scripts"
 source "$ATLASSIAN_SCRIPTS/sourceme.sh"
