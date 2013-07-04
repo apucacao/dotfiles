@@ -36,8 +36,8 @@ else
 fi
 
 alias ll="ls -l -a -t -h"
-alias st='open -a "Sublime Text 2" .'
-alias stb='open -a "Sublime Text" .'
+alias st2='open -a "Sublime Text 2" .'
+alias st='open -a "Sublime Text" .'
 alias md='open -a "Marked"'
 
 # show git info in prompt
