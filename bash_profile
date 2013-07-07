@@ -3,7 +3,6 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/texlive/2011/bin/x86_64-darwin:$PATH"
 export PATH="/usr/local/share/npm/bin:$PATH"
 export PATH="/usr/local/share/python:$PATH"
-export PATH="/opt/maven2/bin:$PATH"
 export PATH="/Users/ageorges/.cabal/bin:$PATH"
 export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
@@ -39,6 +38,9 @@ alias ll="ls -l -a -t -h"
 alias st2='open -a "Sublime Text 2" .'
 alias st='open -a "Sublime Text" .'
 alias md='open -a "Marked"'
+
+alias mvn='/usr/local/Cellar/maven/3.0.5/bin/mvn'
+alias mvn2='/opt/maven2/bin/mvn'
 
 # show git info in prompt
 
