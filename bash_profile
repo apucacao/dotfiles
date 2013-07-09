@@ -1,7 +1,7 @@
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/texlive/2011/bin/x86_64-darwin:$PATH"
-export PATH="/usr/local/share/python:$PATH"
+# export PATH="/usr/local/share/python:$PATH"
 export PATH="/Users/ageorges/.cabal/bin:$PATH"
 export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
