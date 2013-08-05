@@ -93,6 +93,7 @@ make-prompt
 export CLICOLOR=1
 export LSCOLORS=exfxcxdxbxegedabagacad
 
+export HISTFILESIZE=1000
 export HISTTIMEFORMAT="%F %T "
 
 if [ -f `brew --prefix`/etc/bash_completion ]; then
