@@ -27,8 +27,8 @@ export PIP_RESPECT_VIRTUALENV="true"
 # haskell
 # export PATH="$HOME/.cabal/bin:$PATH"
 
-if [[ -r /usr/local/share/python/virtualenvwrapper.sh ]]; then
-  source /usr/local/share/python/virtualenvwrapper.sh
+if [[ -r /usr/local/bin/virtualenvwrapper.sh ]]; then
+  source /usr/local/bin/virtualenvwrapper.sh
 else
   echo "WARNING: Can't find virtualenvwrapper.sh"
 fi
