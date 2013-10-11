@@ -116,5 +116,5 @@ export MAVEN_OPTS="-Xmx1024m"
 
 # Atlassian
 
-export ATLASSIAN_SCRIPTS="$HOME/coding/clones/atlassian-scripts"
-source "$ATLASSIAN_SCRIPTS/sourceme.sh"
+# export ATLASSIAN_SCRIPTS="$HOME/coding/clones/atlassian-scripts"
+# source "$ATLASSIAN_SCRIPTS/sourceme.sh"
