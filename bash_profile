@@ -111,6 +111,7 @@ function serve { python -m SimpleHTTPServer "$@" ;}
 export PATH="/usr/local/heroku/bin:$PATH"
 
 # Java
+export JAVA_HOME="`/usr/libexec/java_home`"
 export JAVA_OPTS="-Xmx4096M -XX:MaxPermSize=1024M"
 export MAVEN_OPTS="-Xmx1024m"
 
