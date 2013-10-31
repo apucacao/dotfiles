@@ -1,5 +1,6 @@
 [user]
 	name = Alexis Georges
+  email = alexis.georges@gmail.com
 [core]
 	ignorecase = false
   editor = vim
@@ -21,7 +22,7 @@
   sl = shortlog -n
   dt = difftool
 [difftool "Kaleidoscope"]
-	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+	cmd = ksdiff --diff \"$LOCAL\" \"$REMOTE\"
 [mergetool "Kaleidoscope"]
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 [difftool]

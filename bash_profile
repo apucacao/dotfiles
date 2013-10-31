@@ -1,22 +1,16 @@
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/local/texlive/2011/bin/x86_64-darwin:$PATH"
 export PATH="/usr/local/share/python:$PATH"
 export PATH="/Users/ageorges/.cabal/bin:$PATH"
-export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
-export PATH="/usr/local/sbin/:$PATH"
-export PATH="$HOME/bin:$PATH"
 
 #node
 export NODE_PATH="/usr/local/lib/node_modules"
 export NPM_CONFIG_PREFIX="/usr/local"
 
 # rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
-# svn
-export SVN_EDITOR="vim"
+export RBENV_ROOT=/usr/local/var/rbenv
+export PATH="$RBENV_ROOT/bin:$PATH"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # python
 export WORKON_HOME="$HOME/.virtualenvs"
@@ -30,17 +24,10 @@ export PIP_RESPECT_VIRTUALENV="true"
 
 if [[ -r /usr/local/bin/virtualenvwrapper.sh ]]; then
   source /usr/local/bin/virtualenvwrapper.sh
-else
-  echo "WARNING: Can't find virtualenvwrapper.sh"
 fi
 
 alias ll="ls -l -a -t -h"
-alias st2='open -a "Sublime Text 2" .'
 alias st='open -a "Sublime Text" .'
-alias md='open -a "Marked"'
-
-alias mvn='/usr/local/Cellar/maven/3.0.5/bin/mvn'
-alias mvn2='/opt/maven2/bin/mvn'
 
 # show git info in prompt
 
@@ -82,7 +69,7 @@ function make-prompt {
   local RESET="\[\e[0m\]"
   local GRAY="\[\e[0;30m\]"
   local PURPLE="\[\e[0;35m\]"
-  local YELLOW="\[\e[0;33m\]"
+  local YELLOW="\[\e[1;33m\]"
   local GREEN="\[\e[0;32m\]"
 
   PS1="${GRAY}\w${RESET}$(virtualenvify)$(gitify)${YELLOW} ∞${RESET} "
@@ -101,21 +88,6 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 
-eval "$(grunt --completion=bash)"
-
-export MAVEN_OPTS="-Xmx2048m"
+if which rbenv > /dev/null; then eval "$(grunt --completion=bash)"; fi
 
 function serve { python -m SimpleHTTPServer "$@" ;}
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-# Java
-export JAVA_HOME="`/usr/libexec/java_home`"
-export JAVA_OPTS="-Xmx4096M -XX:MaxPermSize=1024M"
-export MAVEN_OPTS="-Xmx1024m"
-
-# Atlassian
-
-export ATLASSIAN_SCRIPTS="$HOME/projects/atlassian/atlassian-scripts"
-source "$ATLASSIAN_SCRIPTS/sourceme.sh"
