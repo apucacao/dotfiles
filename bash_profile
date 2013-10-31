@@ -88,6 +88,6 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
 
-if which rbenv > /dev/null; then eval "$(grunt --completion=bash)"; fi
+if which grunt > /dev/null; then eval "$(grunt --completion=bash)"; fi
 
 function serve { python -m SimpleHTTPServer "$@" ;}
