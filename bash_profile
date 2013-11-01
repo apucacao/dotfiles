@@ -49,7 +49,7 @@ function gitify {
   then
     echo ""
   else
-    echo "(${PURPLE}$(git-branch-name)$(git-dirty)${RESET})"
+    echo "(${BLUE}$(git-branch-name)$(git-dirty)${RESET})"
   fi
 }
 
@@ -69,6 +69,7 @@ function make-prompt {
   local RESET="\[\e[0m\]"
   local GRAY="\[\e[0;30m\]"
   local PURPLE="\[\e[0;35m\]"
+  local BLUE="\[\e[1;34m\]"
   local YELLOW="\[\e[1;33m\]"
   local GREEN="\[\e[0;32m\]"
 
