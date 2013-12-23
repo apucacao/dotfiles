@@ -10,19 +10,14 @@
 [push]
 	default = current
 [alias]
-  a = add
   s = status
   b = branch
-  c = commit
-  cm = commit -m
-  co = checkout
-  cob = checkout -b
   l = log
   ll = log -n 1
   sl = shortlog -n
-  dt = difftool
+  dt = difftool -y -t Kaleidoscope
 [difftool "Kaleidoscope"]
-	cmd = ksdiff --diff \"$LOCAL\" \"$REMOTE\"
+	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
 [mergetool "Kaleidoscope"]
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 [difftool]

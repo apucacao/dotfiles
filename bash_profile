@@ -22,6 +22,10 @@ export PIP_RESPECT_VIRTUALENV="true"
 # haskell
 # export PATH="$HOME/.cabal/bin:$PATH"
 
+# java
+
+export JAVA_OPTS="-Djava.awt.headless=true"
+
 if [[ -r /usr/local/bin/virtualenvwrapper.sh ]]; then
   source /usr/local/bin/virtualenvwrapper.sh
 fi
@@ -69,8 +73,8 @@ function make-prompt {
   local RESET="\[\e[0m\]"
   local GRAY="\[\e[0;30m\]"
   local PURPLE="\[\e[0;35m\]"
-  local BLUE="\[\e[1;34m\]"
-  local YELLOW="\[\e[1;33m\]"
+  local BLUE="\[\e[0;34m\]"
+  local YELLOW="\[\e[0;33m\]"
   local GREEN="\[\e[0;32m\]"
 
   PS1="${GRAY}\w${RESET}$(virtualenvify)$(gitify)${YELLOW} ∞${RESET} "
