@@ -70,12 +70,12 @@ function virtualenvify {
 }
 
 function make-prompt {
-  local RESET="\[\e[0m\]"
-  local GRAY="\[\e[0;30m\]"
+  local GRAY="\[\e[1;30m\]"
   local PURPLE="\[\e[0;35m\]"
   local BLUE="\[\e[0;34m\]"
   local YELLOW="\[\e[0;33m\]"
   local GREEN="\[\e[0;32m\]"
+  local RESET="\[\e[0m\]"
 
   PS1="${GRAY}\w${RESET}$(virtualenvify)$(gitify)${YELLOW} ∞${RESET} "
 }
