@@ -96,3 +96,6 @@ fi
 if which grunt > /dev/null; then eval "$(grunt --completion=bash)"; fi
 
 function serve { python -m SimpleHTTPServer "$@" ;}
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
