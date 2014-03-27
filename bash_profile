@@ -31,6 +31,8 @@ if [[ -r /usr/local/bin/virtualenvwrapper.sh ]]; then
   source /usr/local/bin/virtualenvwrapper.sh
 fi
 
+source `brew --prefix`/etc/profile.d/z.sh
+
 alias ll="ls -l -a -t -h"
 alias st='open -a "Sublime Text" .'
 
