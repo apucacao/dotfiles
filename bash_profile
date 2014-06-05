@@ -31,8 +31,6 @@ if [[ -r /usr/local/bin/virtualenvwrapper.sh ]]; then
   source /usr/local/bin/virtualenvwrapper.sh
 fi
 
-source `brew --prefix`/etc/profile.d/z.sh
-
 alias ll="ls -l -a -t -h"
 alias st='open -a "Sublime Text" .'
 
@@ -97,6 +95,8 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
 fi
 
 if which grunt > /dev/null; then eval "$(grunt --completion=bash)"; fi
+
+source `brew --prefix`/etc/profile.d/z.sh
 
 function serve { python -m SimpleHTTPServer "$@" ;}
 
