@@ -2,7 +2,7 @@
 
 ## Installation:
 
-    git clone git://github.com/apucacao/dotfiles.git ~/.dotfiles
+    git clone git@github.com:apucacao/dotfiles.git ~/.dotfiles
     cd ~/.dotfiles
     git submodule update --init
     rake install
