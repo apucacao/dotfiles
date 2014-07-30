@@ -13,8 +13,7 @@
   s = status
   b = branch
   l = log
-  ll = log -n 1
-  sl = shortlog -n
+  sl = log --pretty=oneline --abbrev-commit
   dt = difftool -y -t Kaleidoscope
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
@@ -24,3 +23,6 @@
 	prompt = false
 [diff]
 	tool = Kaleidoscope
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
