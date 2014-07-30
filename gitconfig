@@ -1,10 +1,11 @@
 [user]
 	name = Alexis Georges
-  email = alexis.georges@gmail.com
+	email = alexis.georges@gmail.com
 [core]
 	ignorecase = false
   editor = vim
 	quotepath = false
+	excludesfile = /Users/ageorges/.gitignore_global
 [color]
   ui = auto
 [push]
@@ -14,7 +15,7 @@
   b = branch
   l = log
   sl = log --pretty=oneline --abbrev-commit
-  dt = difftool -y -t Kaleidoscope
+  dt = difftool -y -t sourcetree
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [mergetool "Kaleidoscope"]
@@ -26,3 +27,9 @@
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
