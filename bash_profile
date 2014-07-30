@@ -1,6 +1,5 @@
 export PATH="/usr/local/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/local/share/python:$PATH"
 export PATH="/Users/ageorges/.cabal/bin:$PATH"
 export PATH="/Users/ageorges/bin:$PATH"
 
