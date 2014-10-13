@@ -95,8 +95,6 @@ fi
 
 if which grunt > /dev/null; then eval "$(grunt --completion=bash)"; fi
 
-source `brew --prefix`/etc/profile.d/z.sh
-
 function serve { python -m SimpleHTTPServer "$@" ;}
 
 ### Added by the Heroku Toolbelt
