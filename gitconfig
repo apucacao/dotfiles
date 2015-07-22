@@ -5,22 +5,24 @@
 	ignorecase = false
   editor = vim
 	quotepath = false
-	excludesfile = /Users/ageorges/.gitignore_global
+	excludesfile = ~/.gitignore
 [color]
   ui = auto
 [push]
 	default = current
 [alias]
   s = status
-  b = branch
   l = log
+  co = checkout
+  cob = checkout -b
   sl = log --pretty=oneline --abbrev-commit
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f
 [difftool "sourcetree"]
-	cmd = /usr/local/bin/ksdiff -w \"$LOCAL\" \"$REMOTE\"
-	path =
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
