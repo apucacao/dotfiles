@@ -14,13 +14,6 @@ export RBENV_ROOT=/usr/local/var/rbenv
 export PATH="$RBENV_ROOT/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-# python
-export WORKON_HOME="$HOME/.virtualenvs"
-export VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python2.7"
-export VIRTUALENVWRAPPER_VIRTUALENV_ARGS="--no-site-packages"
-export PIP_VIRTUALENV_BASE="$WORKON_HOME"
-export PIP_RESPECT_VIRTUALENV="true"
-
 # haskell
 # export PATH="$HOME/.cabal/bin:$PATH"
 
