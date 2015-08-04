@@ -27,6 +27,8 @@ fi
 
 alias ll="ls -l -a -t -h"
 alias st='open -a "Sublime Text" .'
+alias clean-branches='git branch --merged master | grep -v "\* master" | xargs -n 1 git branch -d'
+alias rev-parse="git rev-parse HEAD | cut -c1-6"
 
 # show git info in prompt
 
