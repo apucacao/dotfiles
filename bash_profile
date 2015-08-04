@@ -3,6 +3,8 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="/Users/ageorges/.cabal/bin:$PATH"
 export PATH="/Users/ageorges/bin:$PATH"
 
+export EDITOR=vim
+
 #node
 export NODE_PATH="/usr/local/lib/node_modules"
 export NPM_CONFIG_PREFIX="/usr/local"
